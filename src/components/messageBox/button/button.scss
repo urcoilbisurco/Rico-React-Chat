@@ -1,0 +1,25 @@
+@import "../../../colors.scss";
+
+.button{
+  background:$primaryColor;
+  color:white;
+  border-radius:5px;
+  display:flex;
+  padding:4px 8px;
+  align-items: center;
+  justify-content: center;
+  min-width:50px;
+  cursor:pointer;
+}
+.circle{
+  border-radius:999em;
+  width:40px;
+  height:40px;
+  min-width:auto;
+}
+.square{
+  width:25px;
+  height:25px;
+  padding:0;
+  min-width:auto;
+}

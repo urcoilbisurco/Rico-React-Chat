@@ -1,0 +1,19 @@
+@import "../../colors.scss";
+
+.content{
+  display:flex;
+  flex-direction: column;
+  flex:1;
+  overflow: hidden;
+  height:100%;
+  background:white;
+  border-radius:5px 5px 0 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+}
+
+.main{
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  width: 300px;
+}

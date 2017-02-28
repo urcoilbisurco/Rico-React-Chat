@@ -1,0 +1,23 @@
+@import "../../colors.scss";
+
+.messageBox{
+  margin-top:auto;
+  padding:8px;
+  border-top:1px solid $borderGrey;
+}
+.list{
+  background:red;
+}
+.actions{
+  display:flex;
+}
+.textarea{
+  width:100%;
+  border:0;
+  resize: none;
+  font-size:13px;
+  &:focus{
+    border:0;
+    outline:none;
+  }
+}

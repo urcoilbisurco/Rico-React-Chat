@@ -1,0 +1,13 @@
+@import "../../colors.scss";
+
+.listHeader{
+  height:30px;
+  display:flex;
+  align-items: center;
+  color:white;
+  font-weight:600;
+  padding:0 8px;
+  font-size:14px;
+  background:$primaryColor;
+  cursor:pointer;
+}

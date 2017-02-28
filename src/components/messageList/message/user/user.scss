@@ -1,0 +1,17 @@
+@import "../../../../colors.scss";
+
+.user{
+  display:flex;
+  margin-bottom:4px;
+  align-items: center;
+  font-size:12px;
+}
+img{
+  border-radius:999em;
+  width:25px;
+  height:25px;
+  margin-right:4px;
+}
+.name{
+  color:$secondaryColor;
+}
