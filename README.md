@@ -1,6 +1,8 @@
 
 ## Rico
-Coming soon.
+A firebase-backed chat created in React.
+
+![alt tag](./demo.png)
 
 ## Installation
 

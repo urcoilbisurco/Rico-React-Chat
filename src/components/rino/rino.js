@@ -13,29 +13,13 @@ const Rino = React.createClass({
   componentWillMount: function() {
     // Here we bind the component to Firebase and it handles all data updates,
     // no need to poll as in the React example.
-    this.bindAsArray(firebase.database().ref('rino::test1'), 'messages');
+    this.bindAsArray(firebase.database().ref('rico::test1'), 'messages');
   },
   getInitialState:function(){
     return {
-      title:"Rino",
+      title:"Rico",
       open:true,
-      messages:[
-        // {id:"1" , from:{avatar:"https://placeimg.com/40/40/any", name:"Francesco", id:1}, text:"sto scrivendo un messaggio!"},
-        // {id:"12", from:{avatar:"https://placeimg.com/40/40/any", name:"Paolo", id:2}, text:"yey!!"},
-        // {id:"13", from:{avatar:"https://placeimg.com/40/40/any", name:"Francesco", id:1}, text:"wow!!"},
-        // {id:"14", from:{avatar:"https://placeimg.com/40/40/any", name:"Francesco", id:1}, text:"sto scrivendo un messaggio!"},
-        // {id:"15", from:{avatar:"https://placeimg.com/40/40/any", name:"Stefania", id:3}, text:"yey!!"},
-        // {id:"16", from:{avatar:"https://placeimg.com/40/40/any", name:"Stefania", id:3}, text:"wow!!"},
-        // {id:"17", from:{avatar:"https://placeimg.com/40/40/any", name:"Francesco", id:1}, text:"sto scrivendo un messaggio!"},
-        // {id:"18", from:{avatar:"https://placeimg.com/40/40/any", name:"Francesco", id:1}, text:"yey!!"},
-        // {id:"19", from:{avatar:"https://placeimg.com/40/40/any", name:"Stefania", id:3}, text:"wow!!"},
-        // {id:"20", from:{avatar:"https://placeimg.com/40/40/any", name:"Stefania", id:3}, text:"sto scrivendo un messaggio!"},
-        // {id:"21", from:{avatar:"https://placeimg.com/40/40/any", name:"Francesco", id:1}, text:"yey!!"},
-        // {id:"22", from:{avatar:"https://placeimg.com/40/40/any", name:"Francesco", id:1}, text:"wow!!"},
-        // {id:"23", from:{avatar:"https://placeimg.com/40/40/any", name:"Paolo", id:2}, text:"sto scrivendo un messaggio!"},
-        // {id:"24", from:{avatar:"https://placeimg.com/40/40/any", name:"Paolo", id:2}, text:"yey!!"},
-        // {id:"25", from:{avatar:"https://placeimg.com/40/40/any", name:"Francesco", id:1}, text:"wow!!"}
-      ],
+      messages:[],
       user:{name:"Francesco", id:1, avatar:"https://placeimg.com/40/40/any"}
     }
   },
