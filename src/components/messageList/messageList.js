@@ -34,7 +34,6 @@ const MessageList = React.createClass({
     return s;
   },
   render:function() {
-    messageUI=[]
     this.props.messages.forEach(function(m, i){
       prev=this.props.messages[i-1]
       m.showUser=(!prev || prev.from.id!=m.from.id)

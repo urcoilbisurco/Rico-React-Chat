@@ -1,5 +1,5 @@
 var React = require('react');
-var Button = require("./button/button");
+var Button=require("../UI/button/button")
 var css=require("./messageBox.scss");
 
 const MessageBox = React.createClass({
@@ -33,7 +33,7 @@ const MessageBox = React.createClass({
         ref={(input) => { this.textarea = input; }}
         ></textarea>
         <div className={css.actions}>
-          <Button type="square" onClick={this.handlePlusClick}>+</Button>
+        
         </div>
       </div>
     );

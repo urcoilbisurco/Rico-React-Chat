@@ -5,8 +5,9 @@ var css=require("./listHeader.scss");
 const ListHeader = React.createClass({
   render:function(){
     return (
-      <div onClick={this.props.onClick} className={css.listHeader}>
-        {this.props.title}
+      <div  className={css.listHeader}>
+        <span onClick={this.props.onClick} className={css.title}>{this.props.title}</span>
+        <span onClick={this.props.onSettingsClick} className={css.settings}>settings</span>
       </div>
     );
   },
