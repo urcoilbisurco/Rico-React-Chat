@@ -6,7 +6,7 @@ var MessageList=require("../messageList/messageList");
 var MessageBox=require("../messageBox/messageBox");
 var SettingsPage=require("../settingsPage/settingsPage");
 
-var css=require("./rino.scss");
+var css=require("./rico.scss");
 
 const Rino = React.createClass({
   mixins: [ReactFireMixin],
