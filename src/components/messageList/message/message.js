@@ -6,7 +6,7 @@ var css=require("./message.scss");
 const Message = React.createClass({
   render:function() {
     return (
-      <div className={cn(css.message, (this.props.isUser ? css.isOwner : ""))}>
+      <div style={this.props.style} className={cn(css.message, (this.props.isUser ? css.isOwner : ""))}>
         {this.props.showUser &&
           <User user={this.props.from}/>
         }
