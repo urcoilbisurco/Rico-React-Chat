@@ -2,6 +2,9 @@ var React = require('react');
 var css=require("./input.scss");
 
 const Input = React.createClass({
+  value:function(){
+    return this.text.value;
+  },
   render:function() {
     return (
       <div className={css.container} onClick={this.props.onClick}>

@@ -6,8 +6,8 @@ var css=require("./settingsPage.scss");
 const SettingsPage = React.createClass({
   onSave:function(){
     this.props.onSave({
-      username:this.input_username.text.value,
-      id:this.input_id.text.value
+      username:this.input_username.value(),
+      id:this.input_id.value()
     })
   },
   render:function(){

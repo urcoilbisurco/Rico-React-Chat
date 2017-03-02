@@ -7,7 +7,13 @@ const ListHeader = React.createClass({
     return (
       <div  className={css.listHeader}>
         <span onClick={this.props.onClick} className={css.title}>{this.props.title}</span>
-        <span onClick={this.props.onSettingsClick} className={css.settings}>settings</span>
+        {this.props.current_page=="settings" &&
+          <span onClick={this.props.onChatClick} className={css.settings}>Return to chat</span>
+        }
+        {this.props.current_page=="chat" &&
+          <span onClick={this.props.onSettingsClick} className={css.settings}>settings</span>
+
+        }
       </div>
     );
   },

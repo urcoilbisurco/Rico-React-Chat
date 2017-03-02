@@ -21,7 +21,7 @@ const Rino = React.createClass({
       title:"Rico",
       open:true,
       messages:[],
-      open_settings:false,
+      current_page:"chat",
       user:{name:"Francesco", id:1, avatar:"https://placeimg.com/40/40/any"}
     }
   },
@@ -35,27 +35,32 @@ const Rino = React.createClass({
   },
   handleSettingsClick:function(){
     this.setState({
-      open_settings:true
+      current_page:"settings"
+    })
+  },
+  handleChatClick:function(){
+    this.setState({
+      current_page:"chat"
     })
   },
   handleSaveSettings:function(opts){
     this.setState({
       user:{name:opts.username, id:opts.id, avatar:"https://placeimg.com/40/40/any"},
-      open_settings:false
+      current_page:"chat"
     })
   },
   render:function() {
     return (
       <div className={css.main}>
         <div className={css.content}>
-          <ListHeader onClick={this.handleToggleChat} onSettingsClick={this.handleSettingsClick} title={this.state.title}/>
-          { !this.state.open_settings && this.state.open &&
+          <ListHeader onClick={this.handleToggleChat} current_page={this.state.current_page} onChatClick={this.handleChatClick} onSettingsClick={this.handleSettingsClick} title={this.state.title}/>
+          { this.state.current_page=="chat" && this.state.open &&
             <span>
             <MessageList title={this.state.title} user={this.state.user} messages={this.state.messages}/>
             <MessageBox user={this.state.user} onSubmit={this.handleSubmit}/>
             </span>
           }
-          {this.state.open_settings &&
+          {this.state.current_page=="settings" &&
             <SettingsPage user={this.state.user} onSave={this.handleSaveSettings}/>
           }
         </div>

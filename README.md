@@ -22,3 +22,9 @@ Then run
 ```
 
 Then visit localhost:8080
+
+
+## Todo
+[] use draft.js for messageBox element
+[] add Images and emoji/stickers (draft.js plugins)
+[] see how many people are online (firebase cloud messaging?)
